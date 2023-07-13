@@ -1,7 +1,6 @@
 using System;
 using System.Media;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace DakTimer
 {
@@ -114,7 +113,8 @@ namespace DakTimer
 
         private void playSimpleSound()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\adaib\Downloads\Waves-1.mp3");
+
+            SoundPlayer simpleSound = new SoundPlayer(@"c:\Users\adaib\Downloads\Waves-1.wav");
             simpleSound.Play();
         }
     }
