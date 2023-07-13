@@ -1,4 +1,5 @@
 using System;
+using System.Media;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
@@ -15,7 +16,6 @@ namespace DakTimer
         {
             InitializeComponent();
 
-            InitializeComponent();
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000; // 1 second
             timer.Tick += Timer_Tick;
@@ -31,13 +31,14 @@ namespace DakTimer
             {
                 timer.Stop();
                 MessageBox.Show("Timer finished!");
+                playSimpleSound();
             }
         }
         private void UpdateTimeLabel()
         {
             int minutes = remainingTime / 60;
             int seconds = remainingTime % 60;
-            _time.Text = $"{minutes:D2}:{seconds:D2}";
+            _time.Text = $"00:{minutes:D2}:{seconds:D2}";
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -51,13 +52,13 @@ namespace DakTimer
 
         private void Time_Click(object sender, EventArgs e)
         {
-            DateTime currentTime = DateTime.Now;
-            _time.Text = currentTime.ToString("HH:mm:ss");
+        
         }
 
         private void _Min5Btn_Click(object sender, EventArgs e)
         {
             StartTimer(5 * 60); 
+
         }
 
         private void _Min15Btn_Click(object sender, EventArgs e)
@@ -109,6 +110,12 @@ namespace DakTimer
             remainingTime = duration;
             UpdateTimeLabel();
             timer.Start();
+        }
+
+        private void playSimpleSound()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\adaib\Downloads\Waves-1.mp3");
+            simpleSound.Play();
         }
     }
 }
