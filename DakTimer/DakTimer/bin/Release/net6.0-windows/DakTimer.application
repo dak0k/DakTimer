@@ -7,7 +7,7 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\DakTimer_1_0_0_4\DakTimer.dll.manifest" size="4824">
+    <dependentAssembly dependencyType="install" codebase="DakTimer.dll.manifest" size="4824">
       <assemblyIdentity name="DakTimer.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>

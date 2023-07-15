@@ -52,28 +52,28 @@ namespace DakTimer
 
         private void Time_Click(object sender, EventArgs e)
         {
-        
+
         }
 
         private void _Min5Btn_Click(object sender, EventArgs e)
         {
-            StartTimer(5 * 60); 
+            StartTimer(5 * 60);
 
         }
 
         private void _Min15Btn_Click(object sender, EventArgs e)
         {
-            StartTimer(15 * 60); 
+            StartTimer(15 * 60);
         }
 
         private void _Min20Btn_Click(object sender, EventArgs e)
         {
-            StartTimer(20 * 60); 
+            StartTimer(20 * 60);
         }
 
         private void _Min30Btn_Click(object sender, EventArgs e)
         {
-            StartTimer(30 * 60); 
+            StartTimer(30 * 60);
         }
 
         private void _Min45Btn_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace DakTimer
         }
 
         private void _pauseBtn_Click(object sender, EventArgs e)
-        { 
+        {
             timer.Stop();
             isPaused = true;
 
