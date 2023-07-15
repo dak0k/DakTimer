@@ -1,0 +1,5 @@
+C:\Users\adaib\OneDrive\Документы\Github\study-work-timer\DakTimer\DakTimer\bin\Release\net6.0-windows\app.publish\DakTimer.exe
+C:\Users\adaib\OneDrive\Документы\Github\study-work-timer\DakTimer\DakTimer\bin\Release\net6.0-windows\app.publish\DakTimer.dll
+C:\Users\adaib\OneDrive\Документы\Github\study-work-timer\DakTimer\DakTimer\bin\Release\net6.0-windows\app.publish\DakTimer.deps.json
+C:\Users\adaib\OneDrive\Документы\Github\study-work-timer\DakTimer\DakTimer\bin\Release\net6.0-windows\app.publish\DakTimer.runtimeconfig.json
+C:\Users\adaib\OneDrive\Документы\Github\study-work-timer\DakTimer\DakTimer\bin\Release\net6.0-windows\app.publish\DakTimer.pdb

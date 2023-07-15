@@ -41,6 +41,7 @@ namespace DakTimer
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            UpdateTimeLabel();
 
         }
 
@@ -99,9 +100,11 @@ namespace DakTimer
         }
 
         private void _pauseBtn_Click(object sender, EventArgs e)
-        {
+        { 
             timer.Stop();
             isPaused = true;
+
+            StopSimpleSound();
         }
 
         private void StartTimer(int duration)
@@ -110,7 +113,12 @@ namespace DakTimer
             UpdateTimeLabel();
             timer.Start();
         }
-
+        private void StopSimpleSound()
+        {
+            // Stop the currently playing sound
+            SoundPlayer simpleSound = new SoundPlayer(@"c:\Users\adaib\Downloads\Waves-1.wav");
+            simpleSound.Stop();
+        }
         private void playSimpleSound()
         {
 
