@@ -10,7 +10,7 @@ namespace DakTimer
         private System.Windows.Forms.Timer timer;
         private int remainingTime;
         private bool isPaused;
-
+        private SoundPlayer simpleSound = new SoundPlayer(@"c:\Users\adaib\OneDrive\Документы\Github\study-work-timer\Waves-1.wav");
         public Form1()
         {
             InitializeComponent();
@@ -116,13 +116,13 @@ namespace DakTimer
         private void StopSimpleSound()
         {
             // Stop the currently playing sound
-            SoundPlayer simpleSound = new SoundPlayer(@"c:\Users\adaib\Downloads\Waves-1.wav");
+
             simpleSound.Stop();
         }
         private void playSimpleSound()
         {
 
-            SoundPlayer simpleSound = new SoundPlayer(@"c:\Users\adaib\Downloads\Waves-1.wav");
+    
             simpleSound.Play();
         }
     }
