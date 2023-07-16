@@ -10,6 +10,7 @@ namespace DakTimer
         private System.Windows.Forms.Timer timer;
         private int remainingTime;
         private bool isPaused;
+
         private SoundPlayer simpleSound = new SoundPlayer(@"c:\Users\adaib\OneDrive\Документы\Github\study-work-timer\Waves-1.wav");
         public Form1()
         {
@@ -35,9 +36,10 @@ namespace DakTimer
         }
         private void UpdateTimeLabel()
         {
-            int minutes = remainingTime / 60;
+            int hours = remainingTime / 3600;
+            int minutes = (remainingTime % 3600) / 60;
             int seconds = remainingTime % 60;
-            _time.Text = $"00:{minutes:D2}:{seconds:D2}";
+            _time.Text = $"{hours:D2}:{minutes:D2}:{seconds:D2}";
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -84,6 +86,7 @@ namespace DakTimer
         private void _Min60Btn_Click(object sender, EventArgs e)
         {
             StartTimer(60 * 60);
+          
         }
 
         private void _playBtn_Click(object sender, EventArgs e)
